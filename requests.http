@@ -1,0 +1,17 @@
+@API_URL = http://localhost:8000
+
+
+### Request the root path
+GET {{API_URL}}/ HTTP/1.1
+Accept: application/json
+
+### Create a New Post
+POST {{API_URL}}/posts HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "title": "My First Post",
+    "content": "This is the content of my first post.",
+    "extra": "?"
+}
