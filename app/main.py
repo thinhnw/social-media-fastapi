@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 from . import models
-from .config import settings
-from .database import engine
+# from .config import settings
+# from .database import engine
 from .router import auth, posts, users, votes
 
-models.Base.metadata.create_all(bind=engine)
+# models.Base.metadata.create_all(bind=engine)
+# use alembic to create the tables instead
 
 app = FastAPI()
 
