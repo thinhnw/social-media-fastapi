@@ -11,3 +11,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: say hi to thinhnw 
+        run: echo "hello thinhnw"
