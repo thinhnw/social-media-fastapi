@@ -30,8 +30,8 @@ Accept: application/json
 Authorization: Bearer {{authToken}}
 
 {
-    "title": "Foolish",
-    "content": "Bar",
+    "title": "Hello",
+    "content": "World",
     "mal": "ware"
 }
 
@@ -58,7 +58,7 @@ POST {{API_URL}}/users HTTP/1.1
 Accept: application/json
 
 {
-    "email": "johndoe3@example.com",
+    "email": "johndoe@example.com",
     "password": "12345678"
 }
 

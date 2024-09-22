@@ -44,7 +44,7 @@ def get_post(id: int, db: Session = Depends(get_db)) -> PostWithVotesResponse:
     return post
 
 
-@router.post("/")
+@router.post("/", status_code=status.HTTP_201_CREATED)
 def create_post(post: PostBase, 
                 db: Session = Depends(get_db),
                 current_user: User = Depends(oauth2.get_current_user)
